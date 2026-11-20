@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Your Name</title>
+  <meta name="description" content="Selected projects and coursework by Your Name.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="site-title"><a href="index.html">Your Name</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">About me</a></li>
+          <li><a href="interests.html">Technical interests</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="contact.html">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container">
+      <h1>Portfolio</h1>
+      <p class="lead">A selection of projects and coursework. Choose <strong>Quick view</strong>
+        for a short summary, or <strong>View project</strong> for the full details page.</p>
+
+      <ul class="card-grid">
+        <li>
+          <article class="card" aria-labelledby="p1-title">
+            <img src="images/project-placeholder.svg" width="800" height="400" alt="">
+            <div class="card-body">
+              <h2 id="p1-title">Student Event Booking App</h2>
+              <p>A responsive web app that lets students browse and book society events.</p>
+              <p class="tags">HTML, CSS, JavaScript, Firebase</p>
+              <div class="card-actions">
+                <button type="button" class="button-secondary js-only"
+                        data-dialog-open="dialog-p1" data-fallback="project-1.html"
+                        aria-haspopup="dialog">
+                  Quick view<span class="visually-hidden">: Student Event Booking App</span>
+                </button>
+                <a class="button button-primary" href="project-1.html">
+                  View project<span class="visually-hidden">: Student Event Booking App</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" aria-labelledby="p2-title">
+            <img src="images/project-placeholder.svg" width="800" height="400" alt="">
+            <div class="card-body">
+              <h2 id="p2-title">Library Database System</h2>
+              <p>A relational database and Python interface for managing book loans.</p>
+              <p class="tags">Python, SQL, SQLite</p>
+              <div class="card-actions">
+                <button type="button" class="button-secondary js-only"
+                        data-dialog-open="dialog-p2" data-fallback="project-2.html"
+                        aria-haspopup="dialog">
+                  Quick view<span class="visually-hidden">: Library Database System</span>
+                </button>
+                <a class="button button-primary" href="project-2.html">
+                  View project<span class="visually-hidden">: Library Database System</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="card" aria-labelledby="p3-title">
+            <img src="images/project-placeholder.svg" width="800" height="400" alt="">
+            <div class="card-body">
+              <h2 id="p3-title">Accessibility Audit of a Charity Website</h2>
+              <p>A WCAG 2.2 review of a public website with prioritised recommendations.</p>
+              <p class="tags">WCAG 2.2, WAVE, usability evaluation</p>
+              <div class="card-actions">
+                <button type="button" class="button-secondary js-only"
+                        data-dialog-open="dialog-p3" data-fallback="project-3.html"
+                        aria-haspopup="dialog">
+                  Quick view<span class="visually-hidden">: Accessibility Audit of a Charity Website</span>
+                </button>
+                <a class="button button-primary" href="project-3.html">
+                  View project<span class="visually-hidden">: Accessibility Audit of a Charity Website</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Quick-view pop-ups -->
+    <dialog id="dialog-p1" aria-labelledby="dialog-p1-title">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <h2 id="dialog-p1-title" tabindex="-1">Student Event Booking App</h2>
+          <button type="button" class="dialog-close" data-dialog-close>
+            Close<span class="visually-hidden"> pop-up</span>
+          </button>
+        </div>
+        <p><strong>Type:</strong> Year 1 group coursework (team of 4)</p>
+        <p>A mobile-first web application allowing students to browse upcoming society events,
+          filter by category and reserve a place. I was responsible for the front-end layout
+          and the booking form.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Firebase</p>
+        <div class="button-row">
+          <a class="button button-primary" href="project-1.html">View full project details</a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-p2" aria-labelledby="dialog-p2-title">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <h2 id="dialog-p2-title" tabindex="-1">Library Database System</h2>
+          <button type="button" class="dialog-close" data-dialog-close>
+            Close<span class="visually-hidden"> pop-up</span>
+          </button>
+        </div>
+        <p><strong>Type:</strong> Year 1 individual coursework</p>
+        <p>A normalised relational database for a small library with a Python command-line
+          interface for adding members, issuing loans and reporting overdue books.</p>
+        <p><strong>Technologies:</strong> Python, SQL, SQLite</p>
+        <div class="button-row">
+          <a class="button button-primary" href="project-2.html">View full project details</a>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-p3" aria-labelledby="dialog-p3-title">
+      <div class="dialog-inner">
+        <div class="dialog-header">
+          <h2 id="dialog-p3-title" tabindex="-1">Accessibility Audit of a Charity Website</h2>
+          <button type="button" class="dialog-close" data-dialog-close>
+            Close<span class="visually-hidden"> pop-up</span>
+          </button>
+        </div>
+        <p><strong>Type:</strong> Personal project</p>
+        <p>An evaluation of a public charity website against WCAG 2.2 level AA, producing a
+          prioritised list of issues and suggested fixes.</p>
+        <p><strong>Technologies:</strong> WCAG 2.2, WAVE, keyboard testing</p>
+        <div class="button-row">
+          <a class="button button-primary" href="project-3.html">View full project details</a>
+        </div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Your Name. Built with HTML, CSS and JavaScript.</p>
+      <p><a href="contact.html">Contact me</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
