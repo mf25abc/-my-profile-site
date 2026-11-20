@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact me | Your Name</title>
+  <meta name="description" content="Send Your Name a message about placements, projects or questions.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="site-title"><a href="index.html">Your Name</a></p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">About me</a></li>
+          <li><a href="interests.html">Technical interests</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" aria-current="page">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container">
+      <h1>Contact me</h1>
+      <p class="lead">Use this form to ask about placements, my projects or anything else.
+        I aim to reply within two working days.</p>
+
+      <div class="contact-layout">
+        <div>
+          <div id="error-summary" class="error-summary" tabindex="-1" role="alert"
+               aria-labelledby="error-summary-title" hidden>
+            <h2 id="error-summary-title">There is a problem</h2>
+            <ul></ul>
+          </div>
+
+          <div id="success-message" class="success-message" tabindex="-1" role="status" hidden>
+            <h2>Thank you, <span id="success-name"></span></h2>
+            <p>Your message has been received. This is a demonstration form, so your details
+              have not been sent or stored anywhere.</p>
+          </div>
+
+          <form id="contact-form" action="#" method="post" novalidate>
+            <p>Fields marked <span class="required-marker" aria-hidden="true">*</span>
+              <span class="visually-hidden">with an asterisk</span> are required.</p>
+
+            <div class="form-group">
+              <label for="full-name">Full name <span class="required-marker" aria-hidden="true">*</span></label>
+              <span id="full-name-error" class="error-message"></span>
+              <input type="text" id="full-name" name="full-name" autocomplete="name"
+                     required aria-required="true" aria-describedby="full-name-error">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address <span class="required-marker" aria-hidden="true">*</span></label>
+              <span id="email-hint" class="hint">I will only use this to reply to you.</span>
+              <span id="email-error" class="error-message"></span>
+              <input type="email" id="email" name="email" autocomplete="email" spellcheck="false"
+                     required aria-required="true" aria-describedby="email-hint email-error">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone number (optional)</label>
+              <span id="phone-error" class="error-message"></span>
+              <input type="tel" id="phone" name="phone" autocomplete="tel"
+                     aria-describedby="phone-error">
+            </div>
+
+            <div class="form-group">
+              <label for="reason">Reason for getting in touch <span class="required-marker" aria-hidden="true">*</span></label>
+              <span id="reason-error" class="error-message"></span>
+              <select id="reason" name="reason" required aria-required="true"
+                      aria-describedby="reason-error">
+                <option value="">Please choose an option</option>
+                <option value="placement">Placement or job opportunity</option>
+                <option value="project">Question about a project</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <fieldset>
+              <legend>Preferred way to reply</legend>
+              <div class="radio-option">
+                <input type="radio" id="reply-email" name="reply" value="email" checked>
+                <label for="reply-email">Email</label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="reply-phone" name="reply" value="phone">
+                <label for="reply-phone">Phone</label>
+              </div>
+            </fieldset>
+
+            <div class="form-group">
+              <label for="message">Your comments or questions <span class="required-marker" aria-hidden="true">*</span></label>
+              <span id="message-error" class="error-message"></span>
+              <textarea id="message" name="message" rows="6" required aria-required="true"
+                        aria-describedby="message-error message-count"></textarea>
+              <span id="message-count" class="char-count" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <span id="consent-error" class="error-message"></span>
+              <div class="checkbox-option">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true"
+                       aria-describedby="consent-error">
+                <label for="consent">I am happy to be contacted about my message
+                  <span class="required-marker" aria-hidden="true">*</span></label>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button type="submit" class="button-primary">Send message</button>
+              <button type="reset" class="button-secondary">Clear form</button>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-aside" aria-labelledby="other-ways">
+          <h2 id="other-ways">Other ways to find me</h2>
+          <ul>
+            <li><a href="https://github.com/your-username">GitHub profile</a></li>
+            <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn profile</a></li>
+          </ul>
+          <p>Based in Your City, United Kingdom. Available for placements from summer 2027.</p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span data-year>2026</span> Your Name. Built with HTML, CSS and JavaScript.</p>
+      <p><a href="index.html">Back to the About me page</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
