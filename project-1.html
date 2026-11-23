@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Student Event Booking App | Portfolio | Md sharif hossen faisal</title>
-  <meta name="description" content="Project details: a responsive web app for booking student society events.">
+  <title>QuizMaster Quiz Web App | Portfolio | Md Sharif Hossen Faisal</title>
+  <meta name="description" content="Project details: QuizMaster, a Flask and SQLite quiz web app built as university group coursework.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
 
   <header class="site-header">
     <div class="container">
-      <p class="site-title"><a href="index.html">Md sharif hossen faisal</a></p>
+      <p class="site-title"><a href="index.html">Md Sharif Hossen Faisal</a></p>
       <nav class="site-nav" aria-label="Main">
         <ul>
           <li><a href="index.html">About me</a></li>
@@ -28,7 +28,7 @@
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <ol>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><span aria-current="page">Student Event Booking App</span></li>
+        <li><span aria-current="page">QuizMaster Quiz Web App</span></li>
       </ol>
     </nav>
   </div>
@@ -36,42 +36,45 @@
   <main id="main" tabindex="-1">
     <div class="container">
       <article>
-        <h1>Student Event Booking App</h1>
-        <p class="lead">A responsive web application that lets students browse and book
-          society events.</p>
+        <h1>QuizMaster Quiz Web App</h1>
+        <p class="lead">A quiz website with user accounts, multiple quiz categories, scoring,
+          a leaderboard and an admin panel, built with Python and Flask.</p>
 
         <div class="project-hero">
-          <img src="images/project-placeholder.svg" width="800" height="400"
-               alt="Placeholder image where a screenshot of the event booking app will go">
+          <img src="images/quizmaster-diagram.png" width="994" height="826"
+               alt="System diagram: the user uses the HTML front end, which sends requests to the Flask app (Python back end). The Flask app connects to data storage (SQLite) and to the quiz logic, which checks answers and calculates the score.">
         </div>
 
         <dl class="project-meta">
-          <div><dt>Type</dt><dd>Year 1 group coursework</dd></div>
-          <div><dt>My role</dt><dd>Front-end developer</dd></div>
-          <div><dt>Duration</dt><dd>8 weeks</dd></div>
-          <div><dt>Technologies</dt><dd>HTML, CSS, JavaScript, Firebase</dd></div>
+          <div><dt>Type</dt><dd>University group coursework</dd></div>
+          <div><dt>My role</dt><dd>Back-end developer (core logic)</dd></div>
+          <div><dt>Technologies</dt><dd>Python, Flask, Flask-Login, SQLAlchemy, SQLite, Jinja2, HTML, CSS, JavaScript</dd></div>
         </dl>
 
-        <p class="placeholder-note">This is a holding page. Screenshots, a link to the code
-          repository and a live demo will be added here.</p>
+        <p class="placeholder-note">This is a holding page. Screenshots of the app and a link
+          to the code repository will be added here.</p>
 
         <h2>Overview</h2>
-        <p>Student societies advertised events across several social media channels, which
-          made it hard for students to find out what was on. Our team built a single,
-          mobile-friendly site listing all upcoming events with the option to reserve a place.</p>
+        <p>QuizMaster lets users create an account, pick a quiz category (Science, History,
+          Technology or Geography), answer multiple-choice questions with a progress bar, and
+          get their score with feedback. Scores are saved so users can see their recent results
+          and compare themselves with others on a leaderboard. An admin panel lets an
+          administrator add and delete categories and questions without touching the code.</p>
 
         <h2>What I did</h2>
+        <p>My main work in the team was the back-end core logic:</p>
         <ul>
-          <li>Built the responsive event listing layout using CSS Grid.</li>
-          <li>Created the booking form with client-side validation and accessible error messages.</li>
-          <li>Added category filters so students could narrow down events.</li>
-          <li>Managed our shared GitHub repository and reviewed pull requests.</li>
+          <li>Handled the routes (URLs) in Flask for registration, login, quizzes, results, the leaderboard and the admin panel.</li>
+          <li>Wrote the quiz logic that checks each submitted answer and calculates the score.</li>
+          <li>Managed users, including secure login with hashed passwords and admin-only access.</li>
+          <li>Connected the app to the SQLite database, with tables for users, categories, questions and scores.</li>
         </ul>
 
         <h2>What I learned</h2>
-        <p>This project taught me how to divide work across a team using GitHub issues and
-          branches, and showed me how much difference early accessibility decisions make to
-          the final product.</p>
+        <p>This project showed me how data flows through a web application: the user opens the
+          site, the front end sends a request to Flask, and Flask processes it, talks to the
+          database and returns a page. Working in a team also taught me how to split a project
+          into front-end and back-end responsibilities and agree on how the parts connect.</p>
       </article>
 
       <nav class="project-pager" aria-label="Project navigation">
@@ -83,7 +86,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span data-year>2026</span> Md sharif hossen faisal. Built with HTML, CSS and JavaScript.</p>
+      <p>&copy; <span data-year>2026</span> Md Sharif Hossen Faisal. Built with HTML, CSS and JavaScript.</p>
       <p><a href="contact.html">Contact me</a></p>
     </div>
   </footer>
